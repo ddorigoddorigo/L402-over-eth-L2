@@ -1,0 +1,13 @@
+node_modules/
+dist/
+out/
+cache/
+cache_forge/
+broadcast/
+.env
+.env.local
+*.log
+coverage/
+.DS_Store
+packages/contracts/artifacts/
+*.tsbuildinfo

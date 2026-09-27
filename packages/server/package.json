@@ -1,0 +1,43 @@
+{
+  "name": "@l402-el2/server",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "L402-EL2 gatekeeper and paid MCP server",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@l402-el2/core": "*",
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "express": "^4.21.2",
+    "viem": "^2.21.55",
+    "zod": "^3.24.1"
+  },
+  "peerDependencies": {
+    "ioredis": "^5.4.1"
+  },
+  "peerDependenciesMeta": {
+    "ioredis": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.25",
+    "@types/node": "^22.20.1",
+    "ioredis": "^5.11.1",
+    "typescript": "^5.9.3",
+    "vitest": "^2.1.9"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@l402-el2/client",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "L402-EL2 client: AI agent wallet, HTTP 402 interceptor and MCP transport",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@l402-el2/core": "*",
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "viem": "^2.21.55",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "typescript": "^5.9.3",
+    "vitest": "^2.1.9"
+  }
+}
